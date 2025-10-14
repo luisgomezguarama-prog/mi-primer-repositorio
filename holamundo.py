@@ -17,15 +17,7 @@ bot = commands.Bot(command_prefix="!", description="🎵 Bot musical con yt_dlp 
 # ==============================================
 youtube_dl.utils.bug_reports_message = lambda: ''
 
-ytdl_format_options = {
-    'format': 'bestaudio/best',
-    'quiet': True,
-    'extract_flat': False,
-    'nocheckcertificate': True,
-    'ignoreerrors': True,
-    'noplaylist': True,
-    'default_search': 'auto',
-}
+
 
 ffmpeg_options = {
     'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5',
